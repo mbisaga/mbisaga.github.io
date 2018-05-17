@@ -14,8 +14,77 @@ body {
   line-height: 1.5em;
 }
 
-.lady-illustration img {
+
+.articles {
+  width: 100% !important;
+  padding-right: 1.6% !important;
+}
+
+.teal {
+  background: #ccfcf2;
+}
+
+
+
+
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  margin-right: 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
   width: 100%;
+}
+.span_1_of_2 {
+  width: 48%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .col { 
+    margin: 1% 0 1% 0%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+
+
+
+
+
+
+
+
+
+.article {
+  width: 50%;
+  float: left;
+}
+
+.lady-illustration {
+  width: 100%;
+
 }
 
 a {
@@ -62,11 +131,11 @@ a {
   }
 }
 .profile .name-wrapper {
-  float: left;
+  align: center;
 }
 .profile h1 {
   font-size: 2.5em;
-  text-align: left;
+  text-align: center;
   font-family: 'Varela Round', sans-serif;
   color: #4a4e51;
   text-transform: uppercase;
@@ -94,7 +163,7 @@ a {
   background-size: cover;
   border-radius: 50%;
   margin-right: 0px;
-  display: table;
+
   position: relative;
   vertical-align: middle;
 }
@@ -109,6 +178,8 @@ a {
 .profile .picture-resume img {
   border-radius: 50%;
   width: 130px;
+      padding-bottom: 3%;
+
 }
 /*@media (max-width: 1500px) {
   .profile .picture-resume img {
